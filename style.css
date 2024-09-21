@@ -539,7 +539,7 @@ h1{
             flex-direction: column;
             margin-top: 100px;
             overflow: hidden;
-            object-fit: cover;
+            object-fit: contain;
         }
         .play-butt{
             margin-left: 330px;
