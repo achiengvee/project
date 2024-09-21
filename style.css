@@ -538,6 +538,8 @@ h1{
             width: 90% !important;
             flex-direction: column;
             margin-top: 230px;
+            overflow: hidden;
+            object-fit: cover;
         }
         .play-butt{
             margin-left: 330px;
