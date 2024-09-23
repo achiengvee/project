@@ -13,6 +13,7 @@ body{
     margin-right: 40px;
     margin-left: 40px;
     line-height: 1.6;
+    
 }
 
 ul{
@@ -499,6 +500,10 @@ h1{
     .play-butt{
         margin-top: -40px;
         margin-left: 360px;
+        background-color: #60b4df;
+        border-radius: 50%;
+        width: 38px;
+        padding: 10px;
     }
     .play-button{
         width: 60px;
@@ -518,11 +523,10 @@ h1{
         background-color: white;
     }
     .paragraph{
-        margin-left: 390px; 
-        margin-top: -29px;
+        margin-left: 410px; 
+        margin-top: -38px;
         font-size: 20px;
     }
-
     @media (max-width: 768px){
         .container.text{
             overflow: hidden;
@@ -534,15 +538,24 @@ h1{
             width: 48%;
         }
         .image{
-            height: 100% !important;
-            width: 90% !important;
+            max-width: 80% !important;
             flex-direction: column;
-            margin-top: 100px;
+            margin: auto;
+            object-fit: fill;
+            height: auto;
+            max-height: 100vh;
+            padding: 0px 20px;
+            margin-top: 250px;
+        }
+        .image video{
             object-fit: contain;
         }
+        .search{
+            width: 80%;
+        }
         .play-butt{
-            margin-left: 330px;
-            margin-top: -60px;
+            margin-left: 280px;
+            margin-top: -40px;
             background-color: #3498db;
             border-radius: 50%;
             width: 30px;
@@ -553,8 +566,9 @@ h1{
             margin-top: -10px;
         }
         .paragraph{
-            margin-right: -70px;
-        }
+            margin-right: -5px;
+            margin-left: 320px;
+    }
     }
     .container2{
         display: flex;
@@ -568,6 +582,7 @@ h1{
         border: none;
         background-color: #3a91bd;
         margin-left: 150px;
+        border-radius: 10px;
         
     }
     .stat-box{
@@ -589,8 +604,11 @@ h1{
             width: 50%;
             flex-direction: column;
             height: 400px;
-            margin-left: 120px;
+            margin-left: 80px;
         
+        }
+        .divider{
+            display: none;
         }
     }
     .container3 h2{
@@ -624,6 +642,7 @@ h1{
         margin: auto;
         width: 270px;
         margin-left: 2px;
+        border-radius: 10px;
     }
     .blog-content{
         font-size: 20px;
@@ -665,7 +684,7 @@ h1{
 
         }
         .single-blog{
-            width: 80%;
+            width: 75%;
             margin: 5px;
             margin-left: -100px;
         }
@@ -694,6 +713,7 @@ h1{
         justify-content: space-around;
         margin: 5px;
         background-color: #60b4df;
+        border-radius: 10px;
 
       }
       .services-image a{
@@ -714,10 +734,10 @@ h1{
             align-items: center;
             justify-content: space-around;
             margin-top: 1370px;
-            width: 80%;
+            width: 75%;
         }
         .single-services{
-            width: 400px;
+            width: 370px;
             height: 210px;
         }
     }
@@ -744,6 +764,8 @@ h1{
         height: 180px;
         margin: 6px;
         background-color: #60b4df;
+        border-radius: 10px;
+        flex: 1 1 200px;
     
     }
     .single-onco a{
@@ -773,7 +795,7 @@ h1{
             justify-content: center;
             flex-direction: column;
             margin-top: 200px;
-            width: 78%;
+            width: 72%;
         }
     }
     .container6{
@@ -803,6 +825,7 @@ h1{
         text-align: start;
         padding-left: 20px;
         padding-top: 20px;
+        border-radius: 10px;
     
     }
     .docs-content h5{
@@ -831,7 +854,8 @@ h1{
           display: flex;
           justify-content: center;
           flex-direction: column;
-          width: 78%;
+          width: 73%;
+          max-width: 100%;
           
         }
         .single-docs{
@@ -866,6 +890,7 @@ h1{
         font-family: Arial, Helvetica, sans-serif;
         border: 1px solid white;
         background-color: #60b4df;
+        border-radius: 10px;
         
     }
     .soln-content p{
@@ -896,8 +921,9 @@ h1{
         justify-content: space-around;
         justify-content: center;
         flex-direction: column;
-        width: 78%;
+        width: 73%;
         margin-top: 20px;
+        max-width: 100%;
     }
     .single-soln{
         height: 300px;
@@ -956,12 +982,13 @@ h1{
     width: 100%;
     height: 97%;
     margin-top: -210px;
-    margin-right: 122px;
+    margin-right: 20px;
 
 
 }
 .learn{
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: -20px;
 }
 }
 .special-text h1{
@@ -1012,13 +1039,19 @@ h1{
     .special-left{
         width: 95%;
         height: 97%;
-        margin-left: -130px;
-        margin-top: -180px;
+        margin-left: -25px;
+        margin-top: -200px;
     }
     .appointment{
-        margin-left: -95px;
+        margin-left: -30px;
         margin-top: 30px;
     }
+}
+.container10 h2{
+    margin-top: 65px;
+    margin-left: 40px;
+    font-size: 40px;
+    font-weight: lighter;
 }
 .back{
     position: absolute;
@@ -1026,9 +1059,9 @@ h1{
     justify-content: space-around;
     display: flex;
     justify-content: center;
-    width: 96%;
+    width: 95%;
     margin-left: -15px;
-    margin-top: 20px;
+    margin-top: -15px;
 }
 .single-back{
     border: 1px solid white;
@@ -1038,6 +1071,7 @@ h1{
     text-align: start;
     padding-left: 20px;
     padding-top: 20px;
+    border-radius: 10px;
 
 }
 .back-content p{
@@ -1067,7 +1101,8 @@ h1{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 91%;
+        width: 470px;
+        max-width: 100%;
         margin-top: -20px;
     }
     .single-back{
@@ -1088,8 +1123,10 @@ h1{
 .registration{
     height: 100px;
     background-color: #60b4df;
-    width: 90%;
+    width: 1150px;
+    max-width: 100%;
     margin-left: -90px;
+    border-radius: 10px;
 }
 .register p{
     font-size: 30px;
@@ -1105,24 +1142,23 @@ margin-top: -55px;
     .registration{
         margin-top: 300px;
         margin-left: -70px;
-        width: 78%;
+        width: 72%;
     }
     .register p{
         font-size: 20px;
         margin-left: 8px;
     }
     .start{
-        margin-left: 250px;
+        margin-left: 200px;
         padding: 5px;
-        width: 50px;
+        
     }
 }
 footer {
-    background-color: #60b4df;
     color: white;
     padding: 40px 0;
     margin-top: 550px;
-    width: 95%;
+    width: 93%;
     margin-left: 30px;
 }
 
@@ -1132,20 +1168,24 @@ footer {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: #3498db;
+    border-radius: 10px;
 }
 
 .column {
     flex: 1;
     text-align: center;
 }
+.column h2{
+    margin-top: -25px;
+}
 
 h2, h3 {
     color: black;
 }
 .mylogo{
-    margin-top: -15px;
     margin-left: -260px;
-    margin-bottom: -38px;
+    margin-bottom: -10px;
 
 }
 
@@ -1180,6 +1220,8 @@ ul li a:hover {
     margin-top: 80px;
     margin-left: 50px;
     text-align: center;
+    color: black;
+    font-weight: bold;
 }
 
 /* Responsive design for smaller screens */
@@ -1187,11 +1229,17 @@ ul li a:hover {
     .footer-container {
         flex-direction: column;
         align-items: center;
+        margin-top: 100px;
+       margin-left: -20px;
+        width: 92%;
     }
 
     .column {
         margin-bottom: 20px;
-        margin-top: 230px;
-        height: 100px;
+        margin-top: 250px;
+        height: 200px;
+    }
+    .footer-bottom p{
+        margin-left: -20px;
     }
 }
